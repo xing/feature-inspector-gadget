@@ -73,6 +73,7 @@
         
     </ModulePrefs>
     <Content type="html"><![CDATA[<style type="text/css">
+
     body {
       font-size: 11px;
       font-family: Verdana, Arial, sans-serif;
@@ -327,15 +328,15 @@
     }
     
     try {
-      // Register a view of the gadget
-      var ga = _IG_Analytics("UA-976812-4", "/fig.xml");
+      // Register a view of the gadget for Google Analytics to track
+      var ga = _IG_Analytics("UA-12111800-1", "/fig.xml");
     } catch (e) { // Ignore
     }
     
-    /*
-    TODO: Enable usage tracking using Google Analytics
-    var ga = new window._IG_GA("UA-976812-4");
-    ga.reportPageview('/view/featureInspectorGadget');
-    */
-  </script>]]></Content>
+  </script>
+  
+  <!-- Token required by Orkut -->
+  <!-- ALm6fM15RAmxwoKP/bjlS7pvz9fmbBTYhfzorGnB/YFX/mItooLu6Af5gUGPhx58JLNr3j5wb3+W0+E3Rt4mbxT+UV7OK/ZyuuLisfHRSPh9ZejrBtQw86zuJakS0KZ0v3ScYEMmY1w1 -->
+
+  ]]></Content>
 </Module>
