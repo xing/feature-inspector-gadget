@@ -10,18 +10,17 @@ Knowing about what gadget features are available is useful for finding out what
 a particular gadget container can support, which can be useful for:
 
 - either finding new sites and social networks where your existing gadget may run
-- finding about other features that you might (want to) use and 
-  make your gadget more compelling
-- finding out what features are available in a gadget container
-- learning more about gadgets (using direet links to relevant documentation)
+- discovering what features are available in a gadget container, some of which you might 
+  (want to) use and make your gadget more compelling
+- learning more about gadgets (using direct links to relevant documentation)
 
 ### Background
 
-Originally, `gadgets.util.hasFeature` method from OpenSocial API was intended to be used
+Originally, `gadgets.util.hasFeature` method from [OpenSocial API][1] was intended to be used
 for checking what features are supported by the container. Unfortunately, this method is useless
-in [Apache Shindig][2] since it **always returns true** for features that are declared by 
+in [Apache Shindig][3] since it **always returns true** for features that are declared by 
 gadget itself and not whether gadget container actually supports the particular feature.
-Such behavior is totally against the [gadget specification][1] which states:
+Such behavior is totally against the [gadget specification][2] which states:
 
 "*The server **MUST** support the following core JavaScript API, which applies to <Optional> 
 features:
@@ -30,20 +29,21 @@ As indicated in the JsDoc, this method returns true if the server is able to sat
 **featureName**, false otherwise. Gadget developers can use this functionality to enhance their
 gadgets if features are available without disabling their gadget if the features are missing.*"
 
-This problem was worth the attention since [Shindig][2]
+This problem was worth the attention since [Shindig][3]
 is the *reference implementation* of OpenSocial API specifications and **the most widely used
 OpenSocial container implementation** on actual social networking sites.
 The problem with `hasFeature` function has been observed in Shindig implementations
-of the OpenSocial spec [until][3] and including [version 0.9][4].
+of the OpenSocial spec [until][4] and including [version 0.9][5].
 
 Using FIG, gadget developers can learn which gadget features are actually supported by
 a gadget container.
 
 [0]: http://www.google.com/webmasters/gadgets/
-[1]: http://code.google.com/apis/gadgets/docs/spec.html
-[2]: http://incubator.apache.org/shindig/
-[3]: http://wiki.opensocial.org/index.php?title=Gadgets.util_%28v0.8%29#gadgets.util.hasFeature
-[4]: http://wiki.opensocial.org/index.php?title=Gadgets.util_%28v0.9%29#gadgets.util.hasFeature
+[1]: http://code.google.com/apis/opensocial/
+[2]: http://code.google.com/apis/gadgets/docs/spec.html
+[3]: http://incubator.apache.org/shindig/
+[4]: http://wiki.opensocial.org/index.php?title=Gadgets.util_%28v0.8%29#gadgets.util.hasFeature
+[5]: http://wiki.opensocial.org/index.php?title=Gadgets.util_%28v0.9%29#gadgets.util.hasFeature
 
 ## More info
 
@@ -63,7 +63,6 @@ Some of gadget containers in which you can run this gadget are:
 - personalized home page: iGoogle
 - web mail: Google Mail
 - collaboration tool: Google Wave
-- desktop extension: Google Desktop
 
 Additional OpenSocial containers can be found at: [Container Information](http://wiki.opensocial.org/index.php?title=Main_Page#Container_Information)
 
