@@ -74,23 +74,26 @@
         Container-specific gadget features
         -->
         <Optional feature="ads" />
+        <Optional feature="atlassian.util" />
+        <Optional feature="cache" />
         <Optional feature="drag" />
         <Optional feature="finance" />
         <Optional feature="google.blog" />
         <Optional feature="google.sharedstate" />
         <Optional feature="grid" />
+        <Optional feature="invite" />
         <Optional feature="multisize" />
+        <Optional feature="opensocial-payment" />
         <Optional feature="sharedmap" />
+        <Optional feature="tracking" />
+        <Optional feature="vzflash" />
         <Optional feature="wave" />
         <Optional feature="xing-ext" />
-        <!--
-        TODO:
-        check http://www.socialtext.net/open/index.cgi?socialtext_specific_container_features
-        -->
         
     </ModulePrefs>
-    <Content type="html"><![CDATA[<style type="text/css">
-
+    <Content type="html"><![CDATA[
+    
+    <style type="text/css">
     body {
       font-size: 11px;
       font-family: Verdana, Arial, sans-serif;
@@ -217,13 +220,18 @@
       _customFeatures: {
         "ads":                        function() { return !!window._ADS_ClickDestinationUrl; },
         "atlassian.util":             function() { return !!window.atlassian && !!atlassian.util; },
+        "cache":                      function() { return !!window.gadgets && !!gadgets.cache; },
         "drag":                       function() { return !!window._IG_Drag; },
         "finance":                    function() { return !!window.google && !!google.finance; },
         "google.blog":                function() { return !!window.google && !!google.Blog; },
         "google.sharedstate":         function() { return !!window.gadgets && !!gadgets.sharedstate; },
         "grid":                       function() { return !!window._IG_Grid; },
+        "invite":                     function() { return !!window.vz && !!vz.invite; },
         "multisize":                  function() { return !!window._IG_MultiSize; },
+        "opensocial-payment":         function() { return !!window.opensocial && !!opensocial.newFetchPaymentRequest; },
         "sharedmap":                  function() { return !!window.GMap2; },
+        "tracking":                   function() { return !!window.gadgets && !!gadgets.tracking; },
+        "vzflash":                    function() { return !!window.vz && !!vz.flash; },
         "wave":                       function() { return !!window.wave; },
         "xing-ext":                   function() { return !!window.xing; }
       },
@@ -269,13 +277,18 @@
 
         "ads":                        {"Tutorial": "http://www.google.com/adwords/gadgetads/tutorial.html"},
         "atlassian-util":             {"Atlassian Gadget Framework": "http://confluence.atlassian.com/display/GADGETS010/Using+the+Atlassian+Gadgets+JavaScript+Framework"},
+        "cache":                      "http://developer.studivz.net/wiki/index.php/Gadgets.cache_%28v0.8%29",
         "drag":                       {"Drag'n'drop Feature Docs": "http://code.google.com/apis/gadgets/docs/legacy/ui.html#Drag"},
         "finance":                    {"Financial Gadgets Docs": "http://code.google.com/apis/finance/docs/finance-gadgets.html"},
         "google.blog":                "http://code.google.com/apis/blogger/docs/gadgets/gadgets_for_blogger.html",
         "google.sharedstate":         "http://code.google.com/apis/talk/gadgets_realtime.html#api_reference",
         "grid":                       "http://code.google.com/apis/gadgets/docs/legacy/reference.html#Ref_Grid",
+        "invite":                     "http://developer.studivz.net/wiki/index.php/Vz.invite",
         "multisize":                  "http://gadgetads.googlecode.com/svn-history/r507/trunk/gadget-multisize-feature.html",
+        "opensocial-payment":         "http://code.google.com/p/opensocial-virtual-currency/",
         "sharedmap":                  "http://code.google.com/apis/maps/documentation/mapplets/basics.html",
+        "tracking":                   "http://developer.studivz.net/wiki/index.php/Lesson_14:_Tracking_of_user_interaction",
+        "vzflash":                    "http://developer.studivz.net/wiki/index.php/Vz.flash",
         "wave":                       "http://code.google.com/apis/wave/extensions/gadgets/guide.html"
       },
       
@@ -334,7 +347,9 @@
     };
 
 
-    var initializer = function() { GadgetFeatureInspector.initialize(); };
+    var initializer = function() {
+      GadgetFeatureInspector.initialize();
+    };
     
     if (window._IG_RegisterOnloadHandler) {
       window._IG_RegisterOnloadHandler(initializer);

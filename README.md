@@ -74,6 +74,14 @@ Additional OpenSocial containers can be found at: [Container Information](http:/
 
 ## Release notes
 
+### Version 0.48
+December 31, 2009
+
+- Added StudiVZ features "cache", "vzflash", "invite", "tracking"
+- Added "opensocial-payment" feature 
+- Added a smaller screenshot
+- Fixed "atlassian.util" feature detection
+
 ### Version 0.47
 December 22, 2009
 
