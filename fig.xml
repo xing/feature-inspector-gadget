@@ -276,7 +276,7 @@
         "xmlutil":                    "",
 
         "ads":                        {"Tutorial": "http://www.google.com/adwords/gadgetads/tutorial.html"},
-        "atlassian-util":             {"Atlassian Gadget Framework": "http://confluence.atlassian.com/display/GADGETS010/Using+the+Atlassian+Gadgets+JavaScript+Framework"},
+        "atlassian.util":             {"Atlassian Gadget Framework": "http://confluence.atlassian.com/display/GADGETS010/Using+the+Atlassian+Gadgets+JavaScript+Framework"},
         "cache":                      "http://developer.studivz.net/wiki/index.php/Gadgets.cache_%28v0.8%29",
         "drag":                       {"Drag'n'drop Feature Docs": "http://code.google.com/apis/gadgets/docs/legacy/ui.html#Drag"},
         "finance":                    {"Financial Gadgets Docs": "http://code.google.com/apis/finance/docs/finance-gadgets.html"},
