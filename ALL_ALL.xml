@@ -2,9 +2,9 @@
 <messagebundle>
   <msg name="abbr">FIG</msg>
   <msg name="title">Feature Inspector Gadget</msg>
-  <msg name="current_version">v0.47</msg>
+  <msg name="current_version">v0.48</msg>
   <msg name="date">Date</msg>
-  <msg name="current_version_date">2009-12-22</msg>
+  <msg name="current_version_date">2009-12-31</msg>
   <msg name="author">Nenad V. Nikolić &amp; Christopher Blum</msg>
   <msg name="author_email">nenad.nikolic@xing.com</msg>
   <msg name="author_link">http://www.xing.com</msg>
@@ -12,7 +12,7 @@
   <msg name="author_location">Hamburg, Germany</msg>
   <msg name="thumbnail">http://shonzilla.com/gadgets/img/fig.png</msg>
   <msg name="screenshot">http://shonzilla.com/gadgets/img/fig-screenshot.gif</msg>
-  <msg name="description">Gadget for inspecting available gadget features within a gadget container.</msg>
+  <msg name="description">Gadget for inspecting available gadget features within a gadget or OpenSocial container.</msg>
   <msg name="last_version">Last version</msg>
 
   <msg name="standard_features">Standard Features</msg>
