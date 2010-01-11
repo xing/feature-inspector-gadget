@@ -183,7 +183,7 @@
       _features: {
         "analytics":                  function() { return  window.urchinTracker || !!window._gat || !!window._IG_GA || !!window._IG_Analytics; },
         // "auth-refresh":               function() { return false; }, // Probably undetectable
-        // "caja":                       function() { return !!window.caja___; }, // TODO
+        // "caja":                       function() { return false; }, // TODO
         "content-rewrite":            function() { return document.getElementById("cr-jpg").src != "http://www.shonzilla.com/gadgets/img/foobar.jpg" && document.getElementById("cr-png").src == "http://www.shonzilla.com/gadgets/img/foobar.png"; },
         "core":                       function() { return !!window.gadgets; },
         "core.io":                    function() { return !!window.gadgets && !!gadgets.io; },
