@@ -74,6 +74,12 @@ Additional OpenSocial containers can be found at: [Container Information](http:/
 
 ## Release notes
 
+### Version 0.49
+January 11, 2010
+
+- Binary date (11/01/10) release :)
+- Disabled opensocial-i18n detection which isn't working with Apache Shindig yet
+
 ### Version 0.48
 December 31, 2009
 

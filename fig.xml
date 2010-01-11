@@ -55,7 +55,7 @@
         <Optional feature="opensocial-base" />
         <Optional feature="opensocial-data" />
         <Optional feature="opensocial-data-context" />
-        <Optional feature="opensocial-i18n" />
+        <!-- <Optional feature="opensocial-i18n" /> -->
         <Optional feature="opensocial-jsonrpc" />
         <Optional feature="opensocial-reference" />
         <Optional feature="opensocial-templates" />
@@ -201,7 +201,7 @@
         // "opensocial-current":         function() { return !!window.requiredConfig; }, // TODO
         "opensocial-data":            function() { return !!window.opensocial && !!opensocial.data; },
         "opensocial-data-context":    function() { return !!window.opensocial && !!opensocial.data && !!opensocial.data.DataContext; },
-        "opensocial-i18n":            function() { return !!window.gadgets && !!gadgets.i18n; },
+        // "opensocial-i18n":            function() { return !!window.gadgets && !!gadgets.i18n; },
         "opensocial-jsonrpc":         function() { return !!window.JsonRpcContainer; },
         "opensocial-reference":       function() { return !!window.opensocial && !!opensocial.getEnvironment; },
         "opensocial-templates":       function() { return ( !!window.opensocial && !!opensocial.template || !!window.os ); },
@@ -257,7 +257,8 @@
         // "opensocial-current":         "",
         "opensocial-data":            "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Data-Pipelining.xml",
         "opensocial-data-context":    "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Data-Pipelining.xml#rfc.section.11",
-        "opensocial-i18n":            "http://code.google.com/apis/gadgets/docs/i18n.html",
+        "opensocial-i18n":
+"http://wiki.opensocial.org/index.php?title=Gadgets.i18n_%28v0.9%29",
         "opensocial-jsonrpc":         "http://opensocial-resources.googlecode.com/svn/spec/draft/RPC-Protocol.xml",
         "opensocial-reference":       "",
         "opensocial-templates":       "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Templating.xml",
