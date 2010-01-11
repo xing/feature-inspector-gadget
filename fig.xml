@@ -190,7 +190,6 @@
         "dynamic-height":             function() { return ( !!window.gadgets && !!gadgets.window && !!gadgets.window.adjustHeight ) || !!window._IG_AdjustIFrameHeight; },
         "dynamic-height.util":        function() { return !!window.gadgets && !!gadgets.window && !!gadgets.window.getViewportDimensions; },
         "flash":                      function() { return ( !!window.gadgets && !!gadgets.flash ) || !!window._IG_EmbedFlash; },
-        "i18n":                       function() { return !!window.gadgets && !!gadgets.i18n; },
         // "locked-domain":              function() { return false; }, // Propably undetectable
         "minimessage":                function() { return ( !!window.gadgets && !!gadgets.MiniMessage ) || !!window._IG_MiniMessage; },
         "oauthpopup":                 function() { return !!window.gadgets && !!gadgets.oauth && !!gadgets.oauth.Popup; },
@@ -202,6 +201,7 @@
         // "opensocial-current":         function() { return !!window.requiredConfig; }, // TODO
         "opensocial-data":            function() { return !!window.opensocial && !!opensocial.data; },
         "opensocial-data-context":    function() { return !!window.opensocial && !!opensocial.data && !!opensocial.data.DataContext; },
+        "opensocial-i18n":            function() { return !!window.gadgets && !!gadgets.i18n; },
         "opensocial-jsonrpc":         function() { return !!window.JsonRpcContainer; },
         "opensocial-reference":       function() { return !!window.opensocial && !!opensocial.getEnvironment; },
         "opensocial-templates":       function() { return ( !!window.opensocial && !!opensocial.template || !!window.os ); },
@@ -246,7 +246,6 @@
         "dynamic-height":             "http://code.google.com/apis/gadgets/docs/reference/#gadgets.window", // http://code.google.com/apis/gadgets/docs/ui.html#Dyn_Height
         "dynamic-height.util": "",
         "flash":                      "http://code.google.com/apis/gadgets/docs/reference/#gadgets.flash", // "http://code.google.com/apis/gadgets/docs/ui.html#Flash"
-        "i18n":                       "http://code.google.com/apis/gadgets/docs/i18n.html",
         // "locked-domain": "",
         "minimessage":                "http://code.google.com/apis/gadgets/docs/reference/#gadgets.MiniMessage", // "http://code.google.com/apis/gadgets/docs/ui.html#Mini"
         "oauthpopup":                 "http://wiki.opensocial.org/index.php?title=OAuth_Popup",
@@ -258,6 +257,7 @@
         // "opensocial-current":         "",
         "opensocial-data":            "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Data-Pipelining.xml",
         "opensocial-data-context":    "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Data-Pipelining.xml#rfc.section.11",
+        "opensocial-i18n":            "http://code.google.com/apis/gadgets/docs/i18n.html",
         "opensocial-jsonrpc":         "http://opensocial-resources.googlecode.com/svn/spec/draft/RPC-Protocol.xml",
         "opensocial-reference":       "",
         "opensocial-templates":       "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Templating.xml",
