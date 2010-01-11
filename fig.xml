@@ -46,7 +46,6 @@
         <Optional feature="dynamic-height" />
         <Optional feature="dynamic-height.util" />
         <Optional feature="flash" />
-        <Optional feature="i18n" />
         <Optional feature="minimessage" />
         <Optional feature="oauthpopup" />
         <Optional feature="opensocial-0.6" />
@@ -56,6 +55,7 @@
         <Optional feature="opensocial-base" />
         <Optional feature="opensocial-data" />
         <Optional feature="opensocial-data-context" />
+        <Optional feature="opensocial-i18n" />
         <Optional feature="opensocial-jsonrpc" />
         <Optional feature="opensocial-reference" />
         <Optional feature="opensocial-templates" />
