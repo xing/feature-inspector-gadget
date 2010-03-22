@@ -74,6 +74,12 @@ Additional OpenSocial containers can be found at: [Container Information](http:/
 
 ## Release notes
 
+### Version 0.50
+March 23, 2010
+
+- Added LinkedIn feature detection (linkedin-ext)
+- Added Netlog feature detection (netlog, payment)
+
 ### Version 0.49
 January 11, 2010
 

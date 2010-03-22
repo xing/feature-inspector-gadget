@@ -82,8 +82,11 @@
         <Optional feature="google.sharedstate" />
         <Optional feature="grid" />
         <Optional feature="invite" />
+        <Optional feature="linkedin-ext" />
         <Optional feature="multisize" />
+        <Optional feature="netlog" />
         <Optional feature="opensocial-payment" />
+        <Optional feature="payment" />
         <Optional feature="sharedmap" />
         <Optional feature="tracking" />
         <Optional feature="vzflash" />
@@ -227,8 +230,11 @@
         "google.sharedstate":         function() { return !!window.gadgets && !!gadgets.sharedstate; },
         "grid":                       function() { return !!window._IG_Grid; },
         "invite":                     function() { return !!window.vz && !!vz.invite; },
+        "linkedin-ext":               function() { return !!window.linkedin; },
         "multisize":                  function() { return !!window._IG_MultiSize; },
+        "netlog":                     function() { return !!window.Netlog; },
         "opensocial-payment":         function() { return !!window.opensocial && !!opensocial.newFetchPaymentRequest; },
+        "payment":                    function() { return !!window.Netlog && !!Netlog.Payment; },
         "sharedmap":                  function() { return !!window.GMap2; },
         "tracking":                   function() { return !!window.gadgets && !!gadgets.tracking; },
         "vzflash":                    function() { return !!window.vz && !!vz.flash; },
@@ -286,7 +292,9 @@
         "grid":                       "http://code.google.com/apis/gadgets/docs/legacy/reference.html#Ref_Grid",
         "invite":                     "http://developer.studivz.net/wiki/index.php/Vz.invite",
         "multisize":                  "http://gadgetads.googlecode.com/svn-history/r507/trunk/gadget-multisize-feature.html",
+        "netlog":                     "http://netlog.com/developer/documentation/article=opensocialextensions#Netlog",
         "opensocial-payment":         "http://code.google.com/p/opensocial-virtual-currency/",
+        "payment":                    "http://netlog.com/developer/documentation/article=opensocialextensions#Payment",
         "sharedmap":                  "http://code.google.com/apis/maps/documentation/mapplets/basics.html",
         "tracking":                   "http://developer.studivz.net/wiki/index.php/Lesson_14:_Tracking_of_user_interaction",
         "vzflash":                    "http://developer.studivz.net/wiki/index.php/Vz.flash",
