@@ -74,6 +74,11 @@ Additional OpenSocial containers can be found at: [Container Information](http:/
 
 ## Release notes
 
+### Version 0.51
+March 25, 2010
+
+- Added osapi.ui feature detection
+
 ### Version 0.50
 March 23, 2010
 

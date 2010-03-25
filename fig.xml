@@ -60,6 +60,7 @@
         <Optional feature="opensocial-reference" />
         <Optional feature="opensocial-templates" />
         <Optional feature="osapi" />
+        <Optional feature="osapi.ui" />
         <Optional feature="pubsub" />
         <Optional feature="rpc" />
         <Optional feature="setprefs" />
@@ -209,6 +210,7 @@
         "opensocial-reference":       function() { return !!window.opensocial && !!opensocial.getEnvironment; },
         "opensocial-templates":       function() { return ( !!window.opensocial && !!opensocial.template || !!window.os ); },
         "osapi":                      function() { return !!window.osapi; },
+        "osapi.ui":                   function() { return !!window.osapi && !!osapi.ui; },
         "pubsub":                     function() { return !!window.gadgets && !!gadgets.pubsub; },
         "rpc":                        function() { return !!window.gadgets && !!gadgets.rpc; },
         "setprefs":                   function() { return ( !!window.gadgets && !!gadgets.Prefs && !!gadgets.Prefs.prototype && !!gadgets.Prefs.prototype.set ) || ( !!window._IG_Prefs && !!_IG_Prefs.prototype && !!_IG_Prefs.prototype.set ); },
@@ -269,6 +271,7 @@
         "opensocial-reference":       "",
         "opensocial-templates":       "http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Templating.xml",
         "osapi":                      "http://wiki.opensocial.org/index.php?title=OSAPI_Specification#OSAPI_Features",
+        "osapi.ui":                   "http://wiki.opensocial.org/index.php?title=OSAPI_Specification#osapi.ui",
         "pubsub":                     "http://code.google.com/apis/gadgets/docs/pubsub.html",
         "rpc":                        "http://code.google.com/apis/gadgets/docs/reference/#gadgets.rpc",
         "setprefs":                   {"Method Docs": "http://code.google.com/apis/gadgets/docs/reference/#gadgets.Prefs",
