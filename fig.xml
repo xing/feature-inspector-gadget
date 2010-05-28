@@ -48,7 +48,11 @@
         <Optional feature="flash" />
         <Optional feature="minimessage" />
         <Optional feature="oauthpopup" />
-        <Optional feature="opensocial-0.6" />
+        <!--
+          We have to exclude opensocial-0.6 in order to avoid
+          a js error in google's container
+          <Optional feature="opensocial-0.6" />
+        -->
         <Optional feature="opensocial-0.7" />
         <Optional feature="opensocial-0.8" />
         <Optional feature="opensocial-0.9" />
@@ -197,7 +201,7 @@
         // "locked-domain":              function() { return false; }, // Propably undetectable
         "minimessage":                function() { return ( !!window.gadgets && !!gadgets.MiniMessage ) || !!window._IG_MiniMessage; },
         "oauthpopup":                 function() { return !!window.gadgets && !!gadgets.oauth && !!gadgets.oauth.Popup; },
-        "opensocial-0.6":             function() { return !!window.opensocial && !!opensocial.Environment && !!opensocial.Environment.prototype && !!opensocial.Environment.prototype.getSurface; },
+        // "opensocial-0.6":             function() { return !!window.opensocial && !!opensocial.Environment && !!opensocial.Environment.prototype && !!opensocial.Environment.prototype.getSurface; },
         "opensocial-0.7":             function() { return !!window.opensocial && !!opensocial.DataRequest && !!opensocial.DataRequest.Group; },
         "opensocial-0.8":             function() { return !!window.opensocial && !!opensocial.IdSpec && !!opensocial.IdSpec.GroupId; },
         "opensocial-0.9":             function() { return !!window.opensocial && !!opensocial.Person && !!opensocial.Person.prototype && !!opensocial.Person.prototype.getAppData; },
@@ -257,7 +261,7 @@
         // "locked-domain": "",
         "minimessage":                "http://code.google.com/apis/gadgets/docs/reference/#gadgets.MiniMessage", // "http://code.google.com/apis/gadgets/docs/ui.html#Mini"
         "oauthpopup":                 "http://wiki.opensocial.org/index.php?title=OAuth_Popup",
-        "opensocial-0.6":             "http://code.google.com/apis/opensocial/articles/tutorial/tutorial-0.6.html",
+        // "opensocial-0.6":             "http://code.google.com/apis/opensocial/articles/tutorial/tutorial-0.6.html",
         "opensocial-0.7":             "http://code.google.com/apis/opensocial/articles/tutorial/tutorial-0.7.html",
         "opensocial-0.8":             "http://code.google.com/apis/opensocial/articles/tutorial/tutorial-0.8.html",
         "opensocial-0.9":             "http://www.opensocial.org/Technical-Resources/opensocial-spec-v09/",
@@ -363,10 +367,10 @@
       GadgetFeatureInspector.initialize();
     };
     
-    if (window._IG_RegisterOnloadHandler) {
-      window._IG_RegisterOnloadHandler(initializer);
-    } else if (window.gadgets && gadgets.util && gadgets.util.registerOnLoadHandler) {
+    if (window.gadgets && gadgets.util && gadgets.util.registerOnLoadHandler) {
       gadgets.util.registerOnLoadHandler(initializer);
+    } else if (window._IG_RegisterOnloadHandler) {
+      window._IG_RegisterOnloadHandler(initializer);
     } else {
       initializer();
     }
