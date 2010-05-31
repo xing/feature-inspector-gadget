@@ -14,6 +14,7 @@
   <msg name="container_support">Kontejnerska Podrška</msg>
   <msg name="feature_doc">Fičer Dokumentacija</msg>
   <msg name="please_note">Pažnja</msg>
+  <msg name="report_bugs_ideas">Molimo Vas da prijavite bagove, ideje i sugestije na</msg>
   <msg name="not_able">ne može da detektuje sledeće funkcije</msg>
   <msg name="and">i</msg>
   <msg name="not_available">Nedostupno</msg>

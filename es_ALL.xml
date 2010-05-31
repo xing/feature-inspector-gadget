@@ -14,6 +14,7 @@
   <msg name="container_support">Container Soporte</msg>
   <msg name="feature_doc">Feature Documentación</msg> 
   <msg name="please_note">Atención</msg>
+  <msg name="report_bugs_ideas">Por favor, mándanos todos los bugs, ideas y sugerencias a</msg>
   <msg name="not_able">no está capaz de detectar los features siguientes</msg>
   <msg name="and">y</msg>
   <msg name="not_available">No disponible</msg>

@@ -2,7 +2,7 @@
 <Module>
     <!--
     FIG - Feature Inspector Gadget, find out what gadget features are supported by any gadget container.
-    Copyright (C) 2009 XING AG
+    Copyright (C) 2009-2010 XING AG
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -50,7 +50,7 @@
         <Optional feature="oauthpopup" />
         <!--
           We have to exclude opensocial-0.6 in order to avoid
-          a js error in google's container
+          a js error in Google's gadget container
           <Optional feature="opensocial-0.6" />
         -->
         <Optional feature="opensocial-0.7" />
@@ -90,6 +90,7 @@
         <Optional feature="linkedin-ext" />
         <Optional feature="multisize" />
         <Optional feature="netlog" />
+        <Optional feature="ning" />
         <Optional feature="opensocial-payment" />
         <Optional feature="payment" />
         <Optional feature="sharedmap" />
@@ -147,6 +148,10 @@
       color: #999;
       margin-bottom: 10px;
     }
+    #about-gadget {
+      color: #999;
+      margin: 10px 0;
+    }
     .content-rewrite-test {
       display: none;
     }
@@ -164,6 +169,11 @@
     <div class="ie">This Gadget isn't compatible with Internet Explorer versions lower than 8. Sorry.</div>
   <![endif]-->
   
+  <div id="about-gadget">
+    <strong>__MSG_abbr__</strong> - __MSG_title__ __MSG_current_version__<br/>
+    __MSG_report_bugs_ideas__: <a href="mailto:__MSG_author_email__">__MSG_author__</a>
+  </div>
+
   <div id="standard-features">
     <h2>__MSG_standard_features__</h2>
     <table width="100%" id="standard-features-table" border="1" cellpadding="3" cellspacing="3"></table>
@@ -239,6 +249,7 @@
         "linkedin-ext":               function() { return !!window.linkedin; },
         "multisize":                  function() { return !!window._IG_MultiSize; },
         "netlog":                     function() { return !!window.Netlog; },
+        "ning":                       function() { return !!window.ning; },
         "opensocial-payment":         function() { return !!window.opensocial && !!opensocial.newFetchPaymentRequest; },
         "payment":                    function() { return !!window.Netlog && !!Netlog.Payment; },
         "sharedmap":                  function() { return !!window.GMap2; },
@@ -300,6 +311,7 @@
         "invite":                     "http://developer.studivz.net/wiki/index.php/Vz.invite",
         "multisize":                  "http://gadgetads.googlecode.com/svn-history/r507/trunk/gadget-multisize-feature.html",
         "netlog":                     "http://netlog.com/developer/documentation/article=opensocialextensions#Netlog",
+        "ning":                       {"Ning Apps Docs": "http://developer.ning.com/notes/Ning_Apps_Documentation"},
         "opensocial-payment":         "http://code.google.com/p/opensocial-virtual-currency/",
         "payment":                    "http://netlog.com/developer/documentation/article=opensocialextensions#Payment",
         "sharedmap":                  "http://code.google.com/apis/maps/documentation/mapplets/basics.html",

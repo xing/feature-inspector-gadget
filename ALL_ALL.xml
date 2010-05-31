@@ -2,9 +2,9 @@
 <messagebundle>
   <msg name="abbr">FIG</msg>
   <msg name="title">Feature Inspector Gadget</msg>
-  <msg name="current_version">v0.51</msg>
+  <msg name="current_version">v0.6</msg>
   <msg name="date">Date</msg>
-  <msg name="current_version_date">2010-03-25</msg>
+  <msg name="current_version_date">2010-06-01</msg>
   <msg name="author">Nenad V. Nikolić &amp; Christopher Blum</msg>
   <msg name="author_email">nenad.nikolic@xing.com</msg>
   <msg name="author_link">http://www.xing.com</msg>
@@ -24,6 +24,7 @@
   <msg name="container_support">Container support</msg>
   <msg name="feature_doc">Feature Documentation</msg> 
   <msg name="please_note">Please note</msg>
+  <msg name="report_bugs_ideas">Please report any bugs, ideas &amp; suggestions to</msg>
   <msg name="not_able">isn't able (yet) to check for the following features</msg>
   <msg name="and">and</msg>
   <msg name="not_available">N/A</msg>

@@ -74,6 +74,13 @@ Additional OpenSocial containers can be found at: [Container Information](http:/
 
 ## Release notes
 
+### Version 0.6
+June 1, 2010
+
+- Gadget re-tested in iGoogle, Google Wave, Ning, Yahoo! Application
+  Platform
+- Added ning feature detection
+
 ### Version 0.51
 March 25, 2010
 
